@@ -17,7 +17,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -30,19 +30,19 @@ android {
     }
 
 
-    afterEvaluate {
-        publishing {
-            publications {
-                create<MavenPublication>("release") {
-                    from(components["release"])
-
-                    groupId = "com.github.Briandosha"
-                    artifactId = "emulatorchecker"
-                    version = "1.0.0"
-                }
-            }
-        }
-    }
+//    afterEvaluate {
+//        publishing {
+//            publications {
+//                create<MavenPublication>("release") {
+//                    from(components["release"])
+//
+//                    groupId = "com.github.Briandosha"
+//                    artifactId = "emulatorchecker"
+//                    version = "1.0.0"
+//                }
+//            }
+//        }
+//    }
 
 
 }
