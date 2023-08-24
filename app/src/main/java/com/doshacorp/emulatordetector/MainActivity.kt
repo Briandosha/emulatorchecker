@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.doshacorp.emulatorchecker.EmulatorChecker
+
 import com.doshacorp.emulatordetector.ui.theme.EmulatorDetectorTheme
 import android.Manifest
 
@@ -42,11 +42,7 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        var emulatorChecker: EmulatorChecker? = null
 
-        if (emulatorChecker == null) {
-            emulatorChecker = EmulatorChecker(this@MainActivity)
-        }
 
         // Request the necessary permissions
         if (ContextCompat.checkSelfPermission(
@@ -60,15 +56,9 @@ class MainActivity : ComponentActivity() {
                 REQUEST_PERMISSION
             )
         } else {
-            isemulator = emulatorChecker.isEmulator
+
         }
 
-
-
-
-
-
-        Toast.makeText(this@MainActivity, "Is Emulator?  $isemulator", Toast.LENGTH_LONG).show()
 
     }
 }

@@ -68,9 +68,9 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
 
+//    implementation("com.github.Briandosha:emulatorchecker:0.0.1")
+//    implementation("com.github.Anju1415:BlinkEffect-library:0.1.0")
 
-    implementation("com.github.Anju1415:BlinkEffect-library:0.1.0")
-
-    implementation(project(":emulatorchecker"))
+//    implementation(project(":emulatorchecker"))
 
 }
