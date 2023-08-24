@@ -6,10 +6,7 @@ buildscript {
 //
 //    dependencies {
 //        classpath("com.android.tools.build:gradle:3.4.0")
-//        classpath("com.preemptive.dasho:dasho-android:1.4.+")
-//        classpath("com.google.gms:google-services:4.3.14")
-//        classpath("com.google.firebase:firebase-crashlytics-gradle:2.9.2")
-//        classpath(group = "com.smileidentity", name = "smile-id-android", version = "1.0.1")
+
 //        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
 //    }
 
