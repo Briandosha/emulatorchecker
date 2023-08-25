@@ -11,8 +11,14 @@ buildscript {
 //    }
 
     repositories {
+        google()
         mavenCentral()
-        maven(url = "https://maven.preemptive.com/")
+
+        maven(url = "https://jitpack.io")
+
+
+        jcenter()
+        maven ( url = "https://oss.sonatype.org/content/repositories/snapshots/" )
     }
 }
 
