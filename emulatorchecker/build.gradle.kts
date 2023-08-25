@@ -58,3 +58,18 @@ dependencies {
 
 
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.Briandosha"
+            artifactId = "emulatorchecker"
+            version = "0.0.1"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
+

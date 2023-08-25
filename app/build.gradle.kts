@@ -7,6 +7,13 @@ android {
     namespace = "com.doshacorp.emulatordetector"
     compileSdk = 34
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+
     defaultConfig {
         applicationId = "com.doshacorp.emulatordetector"
         minSdk = 21
